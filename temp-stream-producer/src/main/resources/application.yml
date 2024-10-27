@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: temp-stream-producer
+  kafka:
+    bootstrap-servers: localhost:29092,localhost:39092,localhost:49092
+server:
+  port: 8081
