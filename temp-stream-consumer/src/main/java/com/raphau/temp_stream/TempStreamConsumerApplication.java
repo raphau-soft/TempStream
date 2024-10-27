@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TempStreamApplication {
+public class TempStreamConsumerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TempStreamApplication.class, args);
+		SpringApplication.run(TempStreamConsumerApplication.class, args);
 	}
 
 }

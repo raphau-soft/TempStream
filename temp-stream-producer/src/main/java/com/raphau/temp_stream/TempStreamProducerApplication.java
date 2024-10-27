@@ -6,10 +6,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class TempStreamApplication {
+public class TempStreamProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TempStreamApplication.class, args);
+		SpringApplication.run(TempStreamProducerApplication.class, args);
 	}
 
 }
