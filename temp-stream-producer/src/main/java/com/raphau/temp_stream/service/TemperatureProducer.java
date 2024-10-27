@@ -21,7 +21,7 @@ public class TemperatureProducer {
     public void sendTemperatureData() {
         String sensorId = "sensor-" + random.nextInt(10);
         double temperature = 15 + random.nextDouble() * 25;
-        String message = String.format(Locale.US, "{\"sensorId\": \"%s\", \"temperature\": %.2f}", sensorId, temperature);
+        String message = String.format(Locale.US, "{\"sensorId\": \"%s\", \"temperature\": %.2f,\"timestamp\": %d}", sensorId, temperature, System.currentTimeMillis() / 1000L);
 
         kafkaTemplate.send(Constants.TEMPERATURE_TOPIC, message);
         System.out.println("Sent: " + message);

@@ -18,6 +18,7 @@
         <maven.compiler.version>3.13.0</maven.compiler.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring.boot.maven.version>${java.version}</spring.boot.maven.version>
     </properties>
 
     <dependencyManagement>
@@ -36,25 +37,11 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven.compiler.version}</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                    </configuration>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.maven.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
-    <profiles>
-        <profile>
-            <id>build-all</id>
-            <modules>
-                <module>temp-stream-consumer</module>
-                <module>temp-stream-producer</module>
-            </modules>
-        </profile>
-    </profiles>
 </project>
