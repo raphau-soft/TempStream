@@ -9,7 +9,6 @@ By utilizing Apache Kafka as a streaming system, TempStream can scale according 
 
 ## Prerequisites
 
-Prerequisites
 * __Java 21__ - Required for running the Spring Boot applications.
 * __Docker & Docker Compose__ - Required for running the Kafka cluster.
 * __Maven__ - For building the producer and consumer applications.
